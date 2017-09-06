@@ -51,7 +51,7 @@ this.Runtime = {
   },
 
   _maybeEnableBrowserElementForURI: function(uri) {
-    if (uri.scheme !== 'https' && uri.scheme !== 'file') {
+    if (uri.scheme !== 'http' && uri.scheme !== 'https' && uri.scheme !== 'file') {
       console.warn(`not enabling mozbrowser for non-https/file URL ${uri.spec}`);
       return;
     }
